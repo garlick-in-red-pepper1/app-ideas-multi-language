@@ -3,7 +3,7 @@
 <details>
 <summary>🇷🇺 <b>Описание на русском</b></summary>
 
-В этом репозитории я собираю свои решения задач из знаменитого списка [app_ideas](https://github.com](https://github.com/florinpop17/app-ideas). 
+В этом репозитории я собираю свои решения задач из знаменитого списка [app_ideas](https://github.com/florinpop17/app-ideas). 
 Моя цель — написать каждый проект на четырёх разных уровнях абстракции, чтобы лучше понять программирование: от высокоуровневого Python до низкоуровневого Ассемблера.
 
 </details>
@@ -11,7 +11,7 @@
 <details>
 <summary>🇺🇸 <b>Description in English</b></summary>
 
-In this repository, I collect my solutions for projects from the famous [app_ideas](https://github.com](https://github.com/florinpop17/app-ideas) list.
+In this repository, I collect my solutions for projects from the famous [app_ideas](https://github.com/florinpop17/app-ideas) list.
 My goal is to implement each project across four different levels of abstraction to master programming from high-level Python down to low-level Assembly.
 
 </details>
