@@ -2,7 +2,7 @@ big_lang: dict = {'русский': {
     "status": 1,
     "inputer": "Введите число до 8 символов состоящее из 1/0: ",
     'printer': "Ваше число: ",
-    "lose": "Чило не соответствует требованиям"
+    "lose": "Число не соответствует требованиям"
     },
     'english': {
     "status": 1,
@@ -26,7 +26,7 @@ def checker_of_standart(num: str) -> bool:
 
 def bin_2_dec() -> str:
     """receives a value in binary format and returns it in decimal format"""
-    lang_tab: dict = language(input('language of sistem(Русский/English): '))
+    lang_tab: dict = language(input('language of system(Русский/English): '))
 
     if lang_tab["status"] == 0:
         return "This language not using in this system"
