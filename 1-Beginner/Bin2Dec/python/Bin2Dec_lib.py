@@ -16,7 +16,7 @@ loselang: dict = {'status': 0}
 
 def language(lang: str) -> dict:
     """Choose a language of sistem"""
-    return big_lang.get(lang, loselang)
+    return big_lang.get(lang.lower(), loselang)
 
 
 def checker_of_standart(num: str) -> bool:
