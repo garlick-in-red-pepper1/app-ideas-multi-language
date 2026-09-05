@@ -24,9 +24,9 @@ def checker_of_standart(num: str) -> bool:
     return (0 < len(num) < 9) and (num.count("1") + num.count("0") == len(num))
 
 
-def bin_2_dec(lang: str) -> str:
+def bin_2_dec() -> str:
     """receives a value in binary format and returns it in decimal format"""
-    lang_tab: dict = language(lang)
+    lang_tab: dict = language(input('language of sistem(Русский/English): '))
 
     if lang_tab["status"] == 0:
         return "This language not using in this system"
@@ -38,3 +38,4 @@ def bin_2_dec(lang: str) -> str:
 
     else:
         return f"{lang_tab['lose']}"
+
