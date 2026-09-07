@@ -1,3 +1,9 @@
+def decker(bin_num: str) -> int:
+    decknum: int = 0
+    for i in range(len(bin_num)):
+        decknum += int(bin_num[i]) * 2 ** i
+    return decknum
+
 big_lang: dict = {'русский': {
     "status": 1,
     "inputer": "Введите число до 8 символов состоящее из 1/0: ",
