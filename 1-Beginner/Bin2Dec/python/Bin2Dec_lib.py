@@ -39,7 +39,7 @@ def bin_2_dec() -> str:
     bin_num: str = input(lang_tab["inputer"])
 
     if checker_of_standart(bin_num):
-        num: int = int(bin_num, 2)
+        num: int = decker(bin_num)
         return f"{lang_tab['printer']}{num}"
 
     else:
