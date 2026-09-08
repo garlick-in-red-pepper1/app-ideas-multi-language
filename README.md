@@ -22,9 +22,9 @@ My goal is to implement each project across four different levels of abstraction
 
 | Проект (Project) | Уровень (Tier) | Python 🐍 | C++ 🛠️ | C ⚙️ | ASM (RISC-V/CISC) 💻 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| [Bin2Dec](https://github.com/garlick-in-red-pepper1/app-ideas-multi-language/tree/main/1-Beginner/Bin2Dec)| Beginner | ✅ — Готово | ✅ — Готово | ❌ Нет | ❌ Нет |
-| **Calculator** | Beginner | ❌ Нет | ❌ Нет | ❌ Нет | ❌ Нет |
-| **Stopwatch** | Beginner | ❌ Нет | ❌ Нет | ❌ Нет | ❌ Нет |
-| **Todo App** | Beginner | ❌ Нет | ❌ Нет | ❌ Нет | ❌ Нет |
+| [Bin2Dec](https://github.com/garlick-in-red-pepper1/app-ideas-multi-language/tree/main/1-Beginner/Bin2Dec)| Beginner | ✅ — Готово | ✅ — Готово | ✅ — Готово | ❌ — Еще не приступал (Not Started)/❌ — Еще не приступал (Not Started) |
+| **Calculator** | Beginner | ❌ Нет | ❌ Нет | ❌ Нет | ❌ — Нет/❌ — Нет |
+| **Stopwatch** | Beginner | ❌ Нет | ❌ Нет | ❌ Нет | ❌ — Нет/❌ — Нет |
+| **Todo App** | Beginner | ❌ Нет | ❌ Нет | ❌ Нет | ❌ — Нет/❌ — Нет |
 
 *Легенда / Status Keys: ✅ — Готово (Done) | ⏳ — В процессе (In Progress) | ❌ — Еще не приступал (Not Started)*
