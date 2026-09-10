@@ -23,7 +23,7 @@ My goal is to implement each project across four different levels of abstraction
 | Проект (Project) | Уровень (Tier) | Python 🐍 | C++ 🛠️ | C ⚙️ | ASM (RISC-V/CISC) 💻 |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | [Bin2Dec](https://github.com/garlick-in-red-pepper1/app-ideas-multi-language/tree/main/1-Beginner/Bin2Dec)| Beginner | ✅ — Готово | ✅ — Готово | ✅ — Готово | ❌ — Нет/❌ — Нет |
-| **Border Radius Previewer** | Beginner | ❌ Нет | ❌ Нет | ❌ Нет | ❌ — Нет/❌ — Нет |
+| **Border Radius Previewer** | Beginner | ✅ — Готово | ❌ Нет | ❌ Нет | ❌ — Нет/❌ — Нет |
 | **CSV2JSON** | Beginner | ❌ Нет | ❌ Нет | ❌ Нет | ❌ — Нет/❌ — Нет |
 | **Calculato** | Beginner | ❌ Нет | ❌ Нет | ❌ Нет | ❌ — Нет/❌ — Нет |
 
