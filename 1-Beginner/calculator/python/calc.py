@@ -25,7 +25,6 @@ def mul(num1, num2):
 def sub(num1, num2):
     return num1 / num2
 
-
 tup = {'+': plus,
        '-': minus,
        '*': mul,
@@ -37,11 +36,18 @@ def render_delite():
     current = display.get()
     if current:
         display.delete(len(current) - 1, tk.END)
+        df = render.pop(-1)
+        df = list(df)
+        df.pop(-1)
+        df = ''.join(df)
+        if len(df) != 0:
+            render.append(df)
 
 
 def render_clear():
     render.clear()
     display.delete(0, tk.END)
+    render.clear()
 
 
 def render_append(num):
@@ -128,7 +134,7 @@ btn_div.grid(row=4, column=3, ipadx=30, ipady=15)
 btn_backspace.grid(row=5, column=0, ipadx=25, ipady=15)
 btn_clear.grid(row=4, column=1, ipadx=25, ipady=15)
 btn_equals.grid(row=4, column=2, ipadx=30, ipady=15)
-btn0.grid(row=4,column=0,ipadx=30,ipady=15)
+btn0.grid(row=4, column=0, ipadx=30, ipady=15)
 
 display.grid(row=0, column=0, columnspan=2, padx=10, pady=10)
 
