@@ -22,13 +22,17 @@ def mul(num1, num2):
     return num1 * num2
 
 
-def sub(num1, num2):
-    return num1 / num2
+def div(num1, num2):
+    if num2 == 0:
+        return 0
+    else:
+        return num1 / num2
+
 
 tup = {'+': plus,
        '-': minus,
        '*': mul,
-       'sub': sub
+       '/': div
        }
 
 
@@ -62,10 +66,11 @@ def render_append(num):
 def render_finalist():
     display.delete(0, tk.END)
     func = tup[render[1]]
-    num1, num2 = int(render[0]), int(render[2])
+    num1, num2 = float(render[0]), float(render[2])
     display.insert(tk.END, str(func(num1, num2)))
     render.clear()
-    render.append(str(func(num1, num2)))
+    if func(num1, num2) % 1 == 0:
+        render.append(str(int(func(num1, num2))))
 
 
 root = tk.Tk()
@@ -73,7 +78,9 @@ root.title("Calc")
 root.geometry("500x500")
 
 display = tk.Entry(root, font=("Arial", 20),
-                   justify="right", bd=10, insertwidth=14, width=15)
+                   justify="left", bd=10, insertwidth=14, width=15)
+display_mem = tk.Entry(root, font=("Arial", 20),
+                       justify="left", bd=10, insertwidth=14, width=15)
 
 
 btn1 = tk.Button(text="1", command=lambda: render_append('1'),
@@ -136,6 +143,7 @@ btn_clear.grid(row=4, column=1, ipadx=25, ipady=15)
 btn_equals.grid(row=4, column=2, ipadx=30, ipady=15)
 btn0.grid(row=4, column=0, ipadx=30, ipady=15)
 
-display.grid(row=0, column=0, columnspan=2, padx=10, pady=10)
+display.grid(row=0, column=0, columnspan=4, padx=10, pady=10)
+display_mem.grid(row=0, column=3, columnspan=4, padx=10, pady=10)
 
 root.mainloop()
