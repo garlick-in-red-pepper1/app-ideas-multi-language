@@ -25,6 +25,6 @@ My goal is to implement each project across four different levels of abstraction
 | [Bin2Dec](https://github.com/garlick-in-red-pepper1/app-ideas-multi-language/tree/main/1-Beginner/Bin2Dec)| Beginner | ✅ — Готово | ✅ — Готово | ✅ — Готово | ❌ — Нет/❌ — Нет |
 | **Border Radius Previewer** | Beginner | ✅ — Готово | ❌ Нет | ❌ Нет | ❌ — Нет/❌ — Нет |
 | **Calculator** | Beginner | ⏳ — В процессе | ❌ Нет | ❌ Нет | ❌ — Нет/❌ — Нет |
-| **Dollars To Cents** | Beginner | ⏳ — В процессе | ❌ Нет | ❌ Нет | ❌ — Нет/❌ — Нет |
+| **Dollars To Cents** | Beginner | ✅ — Готово | ❌ Нет | ❌ Нет | ❌ — Нет/❌ — Нет |
 
 *Легенда / Status Keys: ✅ — Готово (Done) | ⏳ — В процессе (In Progress) | ❌ — Еще не приступал (Not Started)*
