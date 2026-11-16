@@ -1,0 +1,43 @@
+name: Build Value Converter
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - '1-Beginner/dollar to cents/python/**'
+      - '.github/workflows/build.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest, macos-latest]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Скачивание кода из репозитория
+        uses: actions/checkout@v4
+
+      - name: Настройка Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Установка PyInstaller и зависимостей
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyinstaller
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        shell: bash
+
+      - name: Сборка приложения
+        working-directory: "1-Beginner/dollar to cents/python"
+        run: pyinstaller --onefile --name ValueConverter value_converter.py
+
+      - name: Загрузка готового файла в Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ValueConverter-${{ matrix.os }}
+          path: "1-Beginner/dollar to cents/python/dist/ValueConverter*"
